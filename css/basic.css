@@ -1,0 +1,413 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap");
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+section {
+  max-width: 1440px;
+  margin: auto;
+  padding: 100px 80px 0 80px;
+}
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-left: 10px;
+  letter-spacing: 0px;
+  font-family: "Agdasima";
+}
+.sec_title {
+  display: flex;
+}
+.sec_title img {
+  width: 40px;
+}
+.header_wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  position: relative;
+}
+.logo {
+  margin-left: 5%;
+}
+.logo a img {
+  width: 100%;
+}
+/* 네비게이션 */
+.gnb {
+  display: flex;
+}
+.gnb_list {
+  position: relative;
+  width: 150px;
+  text-align: center;
+}
+.gnb_list:last-child {
+  margin-right: 5%;
+}
+/* .gnb_list:hover .sub_wrap {
+  display: block;
+} */
+.gnb_list > a {
+  display: block;
+  line-height: 100px;
+  font-size: 18px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.gnb_list a:hover {
+  color: #f73c5a;
+}
+
+/* 서브메뉴 */
+.sub_wrap {
+  position: absolute;
+  top: 80px;
+  z-index: 1000;
+  text-align: center;
+  background: white;
+  border-radius: 10px;
+  display: none;
+}
+.sub > li {
+  width: 150px;
+  padding: 5px;
+}
+.sub li a {
+  display: block;
+  padding: 15px 0;
+  font-size: 16px;
+  color: black;
+  white-space: nowrap;
+}
+
+/* 메인 슬라이드 */
+.mainSlide {
+  height: 500px;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mainSlide .swiper-slide:first-child {
+  position: relative;
+}
+.mainslide01_text1,
+.mainslide01_text2 {
+  z-index: 10;
+  position: absolute;
+  width: 350px;
+}
+.mainslide01_text1 {
+  top: 30%;
+  left: 15%;
+}
+.mainslide01_text2 {
+  top: 50%;
+  left: 15%;
+}
+/* 베스트메뉴 */
+.best_menu_wrap {
+  position: relative;
+  border: 1px solid transparent;
+}
+.best_menu {
+  display: flex;
+  margin: 50px 0;
+  justify-content: center;
+}
+.best_menu_img {
+  width: 250px;
+  height: 250px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.best_menu_img img {
+  width: 100%;
+}
+.best_menu_name {
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.best_menu_more {
+  font-weight: 700;
+  font-size: 18px;
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+}
+.tab_menu {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 500;
+  top: 0;
+  right: 0;
+}
+.tab_menu ul {
+  display: flex;
+}
+.tab_menu li {
+  border: 1px solid #f73c5a;
+  padding: 10px;
+  border-radius: 50px;
+  white-space: nowrap;
+}
+.select {
+  color: white;
+  font-weight: 700;
+  background: #f73c5a;
+}
+
+.pop.active {
+  display: flex;
+}
+.pop .pop_close {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  color: black;
+  text-decoration: none;
+  font-size: 40px;
+  transform: translate(50%, -50%);
+}
+.pop .pop_img {
+  max-height: 70vh;
+  max-width: 100vw;
+}
+.pop section {
+  background: white;
+  padding: 50px;
+  position: relative;
+}
+.pop {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+/* 인터뷰 */
+.interview_wrap {
+  display: flex;
+  padding-top: 150px;
+  max-width: 100%;
+}
+.interview_left_rel {
+  flex: 1.25;
+  background: #f73c5a;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+}
+.interview_left {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.interview_title {
+  font-size: 2.6vw;
+  font-weight: 700;
+  color: white;
+  margin-top: 10px;
+  font-family: "Agdasima";
+}
+.interview_text {
+  font-size: 1vw;
+  color: white;
+  font-weight: 500;
+  margin-top: 10px;
+  white-space: nowrap;
+}
+.interviewSlide {
+  flex: 2;
+}
+.interview_center {
+  position: relative;
+}
+.interview_center img {
+  max-width: 100%;
+}
+.interview_right_wrap {
+  flex: 1.25;
+  background: #ffe7e7;
+  display: flex;
+  flex-direction: column;
+}
+.interview_storyTitle {
+  color: #f73c5a;
+  font-size: 1.4vw;
+  font-weight: 700;
+  letter-spacing: -1px;
+  position: absolute;
+  top: 17%;
+  left: 8%;
+}
+.interview_storyTitle:after {
+  display: block;
+  content: "";
+  width: 2vw;
+  height: 0.3vw;
+  background: #f73c5a;
+  margin-top: 10px;
+  border-radius: 50px;
+}
+.interview_storyTitle_right:after {
+  display: block;
+  content: "";
+  width: 1.5vw;
+  height: 0.2vw;
+  background: #f73c5a;
+  margin-top: 7px;
+  border-radius: 50px;
+}
+.interview_storyContent {
+  font-size: 1.8vw;
+  position: absolute;
+  top: 30%;
+  left: 8%;
+  white-space: nowrap;
+}
+.interview_storyContent strong {
+  font-weight: 700;
+}
+.interview_more {
+  background: black;
+  color: white;
+  border-radius: 50px;
+  padding: 0.7vw 1.2vw;
+  font-size: 0.9vw;
+  border: none;
+  position: absolute;
+  top: 60%;
+  left: 8%;
+}
+.interview_right {
+  padding: 2vw;
+  flex: 1;
+  opacity: 0.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.interview_storyTitle_right {
+  color: #f73c5a;
+  font-size: 1.2vw;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 1vw;
+}
+.interview_storyContent_right {
+  font-size: 1.4vw;
+  white-space: nowrap;
+}
+.interview_storyContent_right strong {
+  font-weight: 700;
+}
+.interview_right.active {
+  opacity: 1;
+}
+/* section 02 */
+.sec02 {
+  margin: 3vw auto;
+}
+.sec02_wrap {
+  display: flex;
+}
+.app,
+.store {
+  position: relative;
+  padding: 1vw;
+}
+.app img,
+.store img {
+  width: 100%;
+}
+.appBtn,
+.storeBtn {
+  background: white;
+  color: black;
+  border-radius: 50px;
+  padding: 10px 15px;
+  font-size: 1vw;
+  font-weight: 500;
+  border: none;
+  position: absolute;
+  top: 60%;
+  left: 13%;
+}
+/* section 03 */
+.sns {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5vw auto;
+  justify-content: center;
+  justify-items: center;
+}
+article {
+  width: 250px;
+  height: 250px;
+}
+article img {
+  width: 100%;
+  height: 100%;
+}
+.sns article:hover {
+  z-index: 999;
+  transform: scale(1.1);
+}
+.sns article:hover img {
+  border-radius: 20px;
+}
+/* footer */
+footer {
+  background: #f86b82;
+  height: 20vw;
+}
+.footer_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5vw;
+}
+.footer_logo img {
+  width: 6vw;
+}
+.footer_text {
+  margin-left: 5vw;
+}
+.footer_text p {
+  color: white;
+  font-size: 0.9vw;
+  line-height: 24px;
+}
+.address {
+  width: 42vw;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1vw;
+}
+.address span {
+  font-weight: 700;
+}
+.mo {
+  display: none;
+}
+.mobile_main {
+  display: none;
+}
